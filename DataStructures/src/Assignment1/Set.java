@@ -54,7 +54,8 @@ import java.util.*;
 public class Set<T>{
     //data fields
     private ArrayList<T> myList;
-    
+    String returnList = "";
+
     // constructors
     Set(){
         myList = new ArrayList<T>();
@@ -62,14 +63,21 @@ public class Set<T>{
     // other methods
     public void add(T item){
         // CODE HERE
+        if (!myList.contains(item)){
+            myList.add(item);
+        }
+
     }
     public void remove(T item){
-        // CODE HERE
+        myList.remove(item);
     }
     public Boolean membership(T item){
         // CODE HERE
+        return myList.contains(item);
     }
     public String toString(){
-        // CODE HERE
+        returnList = "";
+        myList.forEach((n) -> returnList = returnList + n + "\n");
+        return returnList;
     }
 }
