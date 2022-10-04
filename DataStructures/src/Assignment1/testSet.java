@@ -1,20 +1,29 @@
 package Assignment1;
 
+import java.util.Scanner;
+
 public class testSet {
     public static void main(String[] args) {
 
         Set<Integer> newSet1 = new Set<>();
 
-        newSet1.add(10);
-        newSet1.add(12);
-        newSet1.add(10);
-        newSet1.add(13);
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Please enter 5 integers: \n");
+
+        for (int i = 0; i <5; i++){
+            newSet1.add(scan.nextInt());
+        }
         System.out.println(newSet1);
-        newSet1.remove(10);
-        newSet1.remove(12);
+
+        System.out.println("Please enter an integer to remove: \n");
+        newSet1.remove(scan.nextInt());
         System.out.println(newSet1);
-        boolean inSet = newSet1.membership(13);
-        System.out.println(inSet);
+
+        System.out.println("Please type an integer to check if it is in the set: \n");
+        boolean inList = newSet1.membership(scan.nextInt());
+        System.out.println("The integer is in the set: " + inList);
+
 
 
 

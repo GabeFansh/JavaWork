@@ -35,16 +35,43 @@ package Assignment1;
  * need to explain here, only the big-O expression.)
  *
  *               |Array List | Linked List|
- *            add|           |            |
- *         remove|           |            |
- *     membership|           |            |
- *       toString|           |            |
+ *            add|   O(n)    |     O(n)   |
+ *         remove|   O(n)    |     O(n)   |
+ *     membership|   O(n)    |     O(n)   |
+ *       toString|   O(n)    |     O(n)   |
  *
  *
  *  4. Explain each of the eight running times in the table applying the
  *  rules of counting seen in class, and for the method calls, if we have
  *  covered them already, directly refer to the running times of those methods.
  *
+ *  Add:
+ *  Worst case of add in array list is O(n) because it is an if statement so we are
+ *  checking the worst case of the condition for the if and the action if the condition is satisfied.
+ *  arrayList.contains() has a worst case of O(n) and add for an arrayList has worst case O(n) so together
+ *  the run time is O(n).
+ *
+ *  Worst case for add in Linked list is O(n) as well because contains will also run through the entire linked list; while
+ *  add for linked list is O(1), together the run time is still O(n).
+ *
+ *  Remove:
+ *  The remove method for array list has to go through every item in the list so worst case run time for remove is O(n)
+ *
+ *  The remove method for linked list has to check the value of each node in the list so worst case run time for remove is O(n)
+ *
+ *  Membership:
+ *  Membership method calls for the contains method on an arrayList object which checks for each item in the list and returns
+ *  true or false if it finds the item that is in the parameter. Because it checks for every item, the worst case run time is O(n)
+ *
+ *  Membership calls the contains method on a linked list which checks for every item in the list and will return true or false when
+ *  it finds the value it was searching for. Since it checks every item, it has a worst case run time of O(n)
+ *
+ *  toString:
+ *  ToString calls for the for each method in a array list and will go through each item and add its data into an empty string.
+ *  Because it goes through each item in the list, the worst case run time is O(n)
+ *
+ *  ToString for a link list will run a while loop until temp.next returns null, and add each nodes value and return each nodes value
+ *  one by one, done in a worst case run time of O(n)
  *
  *
  *************************************************************************/
@@ -54,11 +81,11 @@ import java.util.*;
 public class Set<T>{
     //data fields
     private ArrayList<T> myList;
-    String returnList = "";
+
 
     // constructors
     Set(){
-        myList = new ArrayList<T>();
+        myList = new ArrayList<>();
     }
     // other methods
     public void add(T item){
@@ -66,6 +93,7 @@ public class Set<T>{
         if (!myList.contains(item)){
             myList.add(item);
         }
+
 
     }
     public void remove(T item){
@@ -76,8 +104,8 @@ public class Set<T>{
         return myList.contains(item);
     }
     public String toString(){
-        returnList = "";
-        myList.forEach((n) -> returnList = returnList + n + "\n");
-        return returnList;
+        StringBuilder returnList = new StringBuilder();
+        myList.forEach((n) -> returnList.append((returnList.length() > 0 ? " ": "") + n));
+        return returnList.toString();
     }
 }
