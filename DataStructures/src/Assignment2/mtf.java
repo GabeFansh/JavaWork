@@ -66,16 +66,24 @@ public class mtf<T>{
     }
     // pop
     // O(1) because remove() is O(1) in LL
-    public T pop(){return myData.remove();}
+    public T pop(){
+        return myData.remove();
+    }
     // contains
     // O(n) because contains() is O(n) in LL
-    public boolean contains(T item){return myData.contains(item);}
+    public boolean contains(T item){
+        return myData.contains(item);
+    }
     // isEmpty
     // O(1) because isEmpty() is O(1) in LL
-    public boolean isEmpty(){return myData.isEmpty();}
+    public boolean isEmpty(){
+        return myData.isEmpty();
+    }
     // toString
     // O(n) because toString is O(n) in LL
-    public String toString(){return myData.toString();}
+    public String toString(){
+        return myData.toString();
+    }
     // test
 
 }

@@ -6,22 +6,24 @@ package Assignment1;
  *  Data Structures and Algorithms
  *
  *  Course: CS 241
- *  Team authors: PUT THE NAMES OF ALL YOUR TEAM MEMBERS HERE
- *  External Collaborators: PUT THE NAME OF ANY COLLABORATORS OUTSIDE YOUR TEAM HERE, IF NONE, PUT NONE
- *  References: PUT THE LINKS TO YOUR SOURCES HERE
+ *  Team authors: Gabriel Fanshteyn
+ *  External Collaborators: None
+ *  References: None
  *
  *  Assignment: Assignment 1
  *  Problem: Creating a Set
  *  Description: Create a Set of generic type using class ArrayList(T)
  *
- *  Input:
- *  Output:
+ *  Input: 10 10 10 12 11
+ *  Output: 10 12 11, 10 12, true
  *
  *  Visible data fields:
- *  COPY DECLARATION OF VISIBLE DATA FIELDS HERE
+ *  arrayList
  *
  *  Visible methods:
- *  COPY SIGNATURE OF VISIBLE METHODS HERE
+ *  add
+ *  remove
+ *  membership
  *
  *
  *   Remarks
