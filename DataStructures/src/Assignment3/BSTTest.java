@@ -47,7 +47,7 @@ public class BSTTest {
         BinarySearchTree<Integer> balancedTree = new BinarySearchTree<>();
         BinarySearchTree<Integer> skewedTree = new BinarySearchTree<>();
 
-        int n = 1000;
+        int n = 50;
 
         skewedTreeInsert(n, skewedTree);
         long skewStartTime = System.nanoTime();
@@ -85,7 +85,10 @@ public class BSTTest {
         for (int i = 1; i <= n; i++){
             T.insert(i);
         }
+
     }
+
+
 
 
 }
