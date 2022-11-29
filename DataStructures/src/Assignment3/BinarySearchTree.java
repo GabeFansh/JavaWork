@@ -30,14 +30,24 @@ package Assignment3;
  *  Description: Find the run time when running a binary search on
  *  a skewed tree versus a balanced tree
  *
- *  Input:
- *  Output:
+ *  Input: n
+ *  Output: printtree
  *
  *  Visible data fields:
+ *  root
+ *  left
+ *  right
  *
  *
  *  Visible methods:
- *
+ *  insert
+ *  remove
+ *  findMin
+ *  findMax
+ *  contains
+ *  makeEmpty
+ *  isEmpty
+ *  printTree
  *
  *
  *
@@ -45,7 +55,7 @@ package Assignment3;
  *   Remarks
  *   -------
  *
- *   PUT ALL NON-CODING ANSWERS HERE
+ *   NON CODING QUESTIONS ARE IN BSTTEST.java
  *
  *
  *

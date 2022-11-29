@@ -2,6 +2,40 @@ package Assignment3;
 
 
 /**
+ * Pace University
+ *  Fall 2022
+ *  Data Structures and Algorithms
+ *
+ *  Course: CS 241
+ *  Team authors: Gabriel Fanshteyn
+ *  External Collaborators: None
+ *  References: None
+ *
+ *  Assignment: Assignment 3
+ *  Problem: Binary Search Tree
+ *  Description: Find the run time when running a binary search on
+ *  a skewed tree versus a balanced tree
+ *
+ *  Input: 100,1000,5000,8000,10000
+ *  Output: 25400   |  135200  |    808900    |     820300     |  1008600
+ *
+ *  Visible data fields:
+ *  BinarySearchTree<Integer> balancedTree
+ *  BinarySearchTree<Integer> skewedTree
+ *  skewStartTime
+ *  skewEndTime
+ *  skewDeltaTime
+ *  balStartTime
+ *  balEndTime
+ *  balDeltaTime
+ *
+ *
+ *  Visible methods:
+ *  contains()
+ *  skewedTreeInsert()
+ *  seq()
+ *
+ *
  * 1.
  *      Big-O running times:
  *            | Skewed Tree | Binary Tree |

@@ -1,7 +1,42 @@
 package Assignment4;
 import java.util.Hashtable;
 
+
 /**
+ * Pace University
+ *  Fall 2022
+ *  Data Structures and Algorithms
+ *
+ *  Course: CS 241
+ *  Team authors: Gabriel Fanshteyn
+ *  External Collaborators: None
+ *  References: None
+ *
+ *  Assignment: Assignment 4
+ *  Problem: Hash Tree Test
+ *  Description: The purpose of this homework is to test experimentally the insertion and query
+ * performance of a separate-chaining hash table and an AVL tree, drawing
+ * conclusions from the results observed.
+ *
+ *
+ *  Input: 100,1000,10000,100000,1000000
+ *  Output:
+ *
+ *  Visible data fields:
+ *  itemCount
+ *  treeStart
+ *  treeEnd
+ *  treeDelta
+ *  hashStart
+ *  hashEnd
+ *  hashDelta
+ *
+ *
+ *  Visible methods:
+ *  put
+ *  insert
+ *  contains
+ *
  *
  *
  * 1.
