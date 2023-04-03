@@ -1,5 +1,6 @@
 package Homework2;
 
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -10,9 +11,9 @@ import java.util.Random;
  *  Algorithms and Computing Theory
  *
  *  Course: CS 242
- *  Team members: PUT THE NArrayMES HERE
- *  Collaborators: PUT THE NArrayME OF ArrayNY COLLArrayBORArrayTORS OUTSIDE YOUR TEArrayM HERE, IF NONE, PUT NONE
- *  References: PUT THE LINKS TO YOUR SOURCES HERE
+ *  Team members: Gabriel Fanshteyn
+ *  Collaborators: None
+ *  References: None
  *
  *  Assignment: Assignment 2
  *  Problem: The purpose of this assignment is to test the performance of 3 algorithms for this

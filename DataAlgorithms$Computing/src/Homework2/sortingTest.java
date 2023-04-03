@@ -17,9 +17,9 @@ import java.lang.Math;
  *  Algorithms and Computing Theory
  *
  *  Course: CS 242
- *  Team members: PUT THE NArrayMES HERE
- *  Collaborators: PUT THE NArrayME OF ArrayNY COLLArrayBORArrayTORS OUTSIDE YOUR TEArrayM HERE, IF NONE, PUT NONE
- *  References: PUT THE LINKS TO YOUR SOURCES HERE
+ *  Team members: Gabriel Fanshteyn
+ *  Collaborators: NONE
+ *  References: None
  *
  *  Assignment: Assignment 2
  *  Problem: The purpose of this assignment is to test the performance of 3 algorithms for this
@@ -136,7 +136,6 @@ public class sortingTest {
         System.out.println("Heap Sort RunTime: " + deltaTime3);
 
 
-
     }
 
     public static int[][] generateRandomArrays(int n, int max) {
@@ -155,7 +154,7 @@ public class sortingTest {
         for (int i = 0; i < n; i++) {
             arrays[0][i] = nums[i];
             arrays[1][i] = nums[i + n];
-            arrays[2][i] = nums[i + 2*n];
+            arrays[2][i] = nums[i + 2 * n];
         }
         return arrays;
     }
