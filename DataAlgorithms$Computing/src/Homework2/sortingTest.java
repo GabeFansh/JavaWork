@@ -52,6 +52,19 @@ import java.lang.Math;
  *   requires multiple calls for extractmin which runs in logn.
  *
  *
+ *   Quicksort runs in T(n) = T(n/2) + O(n). I is the amount of items after the pivot and n is the amount of items in the list
+ *   since the recurrence occurs within both sides of the pivot. Because the partition is chosen at random, it shortens the amount of unbalanced
+ *   partitions so the run time is slightly different then quicksort.
+ *
+ *   Random selection runs T(n) = T(i) + T(n) + O(n) because we can either find the smallest numbers right away or we recursive call
+ *   to a pivot of i and check each side of the pivot. It is similar to quick sort where there is a pivot item in the starting array but
+ *   it's goal isn't to sort the items its to select the items from any point within the arrays
+ *
+ *   Min heap runs in T(n) = O(n) + T(n-1) * O(logn). In min heap sort, the elements are put into a min heap which takes O(n) time. The
+ *   root element is extracted and placed at the end of the array. Heapify takes O(logn) in worst case since it is going through the heap.
+ *   A heap has n elements.
+ *
+ *
  * 4.
  * *
  * *   		iQS		|     10^2      |    10^3     |    10^4     |    10^5     |    10^6
@@ -94,6 +107,17 @@ import java.lang.Math;
  *      for each, the runtime between different values of i does not largely change. This is also something that
  *      is kept when increasing the amount of n numbers in the array. While the run times do increase the more n numbers
  *      in the array, the run time does not change between the different i values.
+ *
+ *      Quick Sort runtimes show that it runs in a more logmirthmic way where it increases up to a point where once you reach a certain amount
+ *      of n integers, the run time for the algorithm does not change as much compared to a slightly smaller value of n.
+ *
+ *      Random Selection runs in a more linear way so there would constantly so proportionally the value of n would also increase the run time
+ *      for the algorithm. Since the partitions are mostly balanced when the algorithm runs, it doesn't do any extra recurrsive calls then
+ *      it needs to.
+ *
+ *      Min heap runs logerithmically, similar to quick sort. However, since min heap also has to move items towards the end of the array as each
+ *      new item is entered, it slows down the run time the larger the value of n is. the run time increases more the more n is because of
+ *      the amount of new items have to be added to the heap before the heapify method is called.
  *
  *************************************************************************/
 
