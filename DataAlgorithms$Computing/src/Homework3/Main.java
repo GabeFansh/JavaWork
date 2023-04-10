@@ -41,11 +41,12 @@ package Homework3;
  *
  *
  *  EXTRA CREDIT:
- *  When looking at the code, the reason why the length formula is always returned as cube is because thats the function that determins how much empty
- *  space is left after grouping words onto a line. the smaller the number means that there is a larger chance for there to be a larger empty space gap
- *  between words or at the end. By cubing it, it increases the number exponentially where the higher the number is, the lower chance there is for a line
- *  or a pair of words to have a large space either at the end or inbetween them. This could also work if the final value is squared instead of cubed
- *  however, cubing it will provide a greater exponential increase compared to squared so cubing it is prefered.
+ *
+ *  By changing the exponent, it increases the growth of the length unit of the empty space. The larger the number, the more priorty the program has to
+ *  focus on the amount of empty space that is a result when going to the next line. This could work by lowering the exponent or increasing it.
+ *  However, if the value if linear then it doesn't prioritize the empty space as much so the justification would not be as "justified" compared to
+ *  having the exponent cubed or powered to the 5th.
+ *
  *
  *
  *************************************************************************/
@@ -71,6 +72,7 @@ public class Main {
         int width = scanner.nextInt();
 
         String[] words = createRandomSprings(n);
+
 
         // Split into lines
         int[] breakpoints = bad.split(width, words);
